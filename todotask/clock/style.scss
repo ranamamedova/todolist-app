@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color: pink;
+}
+.clock {
+    position: relative;
+    width: 30rem;
+    height:30rem;
+    border: 5px solid pink;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url('https://w7.pngwing.com/pngs/10/232/png-transparent-roman-numerals-clock-face-numerical-digit-time-attendance-clocks-clock-angle-white-text.png');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .hand {
+    position: absolute;
+    transform-origin: center bottom;
+    
+  }
+  
+  .hour-hand {
+    width: 4px;
+    height: 50px;
+    background-color: black;
+    left: calc(50% - 2px);
+    top: calc(50% - 50px);
+  }
+  
+  .minute-hand {
+    width: 2px;
+    height: 70px;
+    background-color: black;
+    left: calc(50% - 1px);
+    top: calc(50% - 70px);
+  }
+  
+  .second-hand {
+    width: 1px;
+    height: 80px;
+    background-color: red;
+    left: calc(50% - 0.5px);
+    top: calc(50% - 80px);
+  }
+  
+  .center-circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    left: calc(50% - 5px);
+    top: calc(50% - 5px);
+  }
+  
